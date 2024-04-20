@@ -1,0 +1,42 @@
+<div class="container mt-5 ">
+
+  <form [formGroup]="searchGroup">
+    <div class="form-group">
+      <input placeholder="Search" type="number" formControlName="p" class="form-control" id="search"  />
+      <button (click)="searchByPrice()" class="btn btn-info">Search</button>
+    </div>
+    <div>
+      <button class="btn btn-primary addplan"  routerLink="/admin/addplan" >+ Add New</button>
+    </div>
+  </form>
+
+
+  <div class="card custom-card" *ngFor="let plan of planList">
+
+
+    <div class="card-body">
+
+      <!-- Plan Name, Plan Price, Unlimited Calls -->
+
+      <div>
+        <h5 class="card-title">{{ plan.planName }}</h5>
+        <p class="card-text">Plan Price: <b>{{ plan.planPrice | currency:'INR' }}</b></p>
+        <p class="card-text">Note: Unlimited Calls</p>
+      </div>
+
+      <!-- Plan Details, Plan Validity, and Arrow -->
+      <div class="plan-details">
+        <p class="card-text">Plan Details: {{ plan.planDetails }}</p>
+        <p class="card-text">Validity: {{ plan.planValidity }} Days</p>
+      </div>
+
+      <div class="arrow">
+        <button class="btn btn-primary" (click)="edit(plan.planId)"  >Edit</button>
+        <button class="btn btn-danger" (click)="delete(plan.planId)" >Delete</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

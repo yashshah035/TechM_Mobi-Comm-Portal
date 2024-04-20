@@ -1,0 +1,48 @@
+.custom-card {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+
+  /* Add margin between cards */
+}
+
+/* Set margin between plan name and plan details divs */
+.plan-details {
+  margin-top: 10px;
+}
+
+/* Style the arrow */
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  border-radius: 13px;
+  background-color: rgba(159, 154, 154, 0.641);
+
+  justify-content: space-around;
+
+}
+
+.card-title {
+  background-color: rgb(8, 55, 59);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px;
+  color: white;
+}
+
+.container{
+  margin-top: 0;
+  padding: 0;
+}
+
+button{
+margin-left: 90%;
+margin-bottom: 0;
+z-index: 0;
+margin-top: 0;
+}

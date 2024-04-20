@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div>
+    <button (click)="skip()" class="btn btn-primary ">Skip</button>
+  </div>
+  <div class="card custom-card" *ngFor="let addon of addonList">
+    <div class="card-body"  (click)="selectedAddon(addon.addonId)">
+      <!-- Plan Name, Plan Price, Unlimited Calls -->
+      <div>
+        <h5 class="card-title">{{ addon.addonName }}</h5>
+        <p class="card-text">Addon Price: <b>{{ addon.addonPrice | currency:'INR' }}</b></p>
+        <p class="card-text">Note: This Offers gets has high internet speed.</p>
+      </div>
+
+      <!-- Plan Details, Plan Validity, and Arrow -->
+      <div class="plan-details">
+        <p class="card-text">Details    :   {{ addon.addonDetails}}</p>
+        <p class="card-text">Validity   :   {{ addon.addonValidity }} Days</p>
+      </div>
+
+      <div class="arrow">➤</div>
+    </div>
+  </div>
+</div>

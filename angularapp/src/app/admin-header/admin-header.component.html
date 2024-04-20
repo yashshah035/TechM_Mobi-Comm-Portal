@@ -1,0 +1,25 @@
+<!-- app.component.html -->
+
+<div class="navbar">
+  <div class="navbar-left">
+    <h2>Mobi-Comm Services Ltd.</h2>
+  </div>
+  <div class="navbar-middle">
+    <a routerLink="/admin/listplan" routerLinkActive="activated"><h6>Popular Plans</h6></a>
+    <a routerLink="/admin/listaddon"  routerLinkActive="activated"><h6>Addons</h6></a>
+    <a routerLink="/admin/paymenthistory" routerLinkActive="activated"><h6>Payment History</h6></a>
+
+
+  </div>
+  <div class="navbar-right">
+    <button (click)="logout()"  class="btn btn-primary" ><a href="/home" >Logout</a></button>
+  </div>
+</div>
+
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <p>&copy;2024 Mobi-Comm Services Ltd.</p>
+</div>

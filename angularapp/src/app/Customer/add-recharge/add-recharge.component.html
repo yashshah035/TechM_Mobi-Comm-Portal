@@ -1,0 +1,63 @@
+<div class="main-container">
+
+  <div class="container" *ngIf="plan != null">
+
+    <h3>Plan Details</h3>
+
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item">Plan Type : {{plan.planType}}</li>
+        <li class="list-group-item">Plan Validity : {{plan.planValidity}}</li>
+        <li class="list-group-item">Plan Price : {{plan.planPrice}}</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container" *ngIf="addon != null">
+
+    <h3>Addon Details</h3>
+
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item">Addon Details : {{addon.addonDetails}}</li>
+        <li class="list-group-item">Addon Validity : {{addon.addonValidity}}</li>
+        <li class="list-group-item">Addon Price : {{addon.addonPrice}}</li>
+      </ul>
+    </div>
+
+  </div>
+
+</div><br>
+
+
+<div>
+  <div class="container" *ngIf="plan != null || addon != null">
+    <h4><b>Total Amount: {{totalAmount}}</b></h4><br>
+
+  </div>
+
+  <button class="btn btn-primary" type="submit" (click)="clickRecharge()">Recharge</button>
+
+  <!-- <div class="container" *ngIf="plan != null || addon != null">
+    <h4><b>Total Amount: {{plan != null && addon != null ? plan.planPrice + addon.addonPrice : (plan != null ?
+        plan.planPrice : addon.addonPrice)}}</b></h4><br>
+
+  </div> -->
+
+  <div class="data" *ngIf="!isCustomerExists">
+    <form [formGroup]="myForm">
+      <div class="inputs">
+
+        <input type="text" placeholder="Enter your name" formControlName="username" name="username" id="username">
+        <input type="email" placeholder="Enter your email" formControlName="email" name="email" id="email">
+        <textarea type="text" placeholder="Enter your address" formControlName="address" name="address" id="address"></textarea><br>
+        <button class="btn btn-primary" type="submit" (click)="submitForm(myForm.value)">Add Details</button>
+
+      </div>
+
+    </form>
+  </div>
+  <br>
+
+</div>

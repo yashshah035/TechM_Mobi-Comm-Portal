@@ -1,0 +1,21 @@
+<div>
+  <table class="table">
+    <thead>
+      <th scope="col">Payment Id</th>
+      <th scope="col">Date</th>
+      <th scope="col">Amount Paid</th>
+      <th scope="col">Mode of Payment</th>
+      <th scope="col">Status</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of paymentList" scope="row">
+        <td>{{p.paymentId}}</td>
+        <td>{{p.paymentDate}}</td>
+        <td>{{p.totalAmount}}</td>
+        <td>{{p.modeOfPayment}}</td>
+        <td>{{p.status}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,33 @@
+list-group-item{
+  list-style: none;
+
+}
+
+.main-container{
+  display:flex;
+  flex-direction: row;
+
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  width:40%;
+}
+
+input{
+margin-bottom: 7px;
+}
+
+button{
+width: 30%;
+}
+
+.data{
+  margin-left: 10px;
+}
+
+/* .container{
+  margin-bottom: 40px;
+} */

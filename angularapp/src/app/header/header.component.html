@@ -1,0 +1,27 @@
+
+<div class="navbar">
+  <div class="navbar-left">
+    <h2>Mobi-Comm Services Ltd.</h2>
+  </div>
+  <div class="navbar-middle">
+
+    <a routerLink="/listplan" routerLinkActive="activated"><h6>Popular Plans</h6></a>
+    <a routerLink="/listaddon" routerLinkActive="activated"><h6>Addons</h6></a>
+    <a routerLink="/notifications" routerLinkActive="activated"><h6>Notifications</h6></a>
+    <a routerLink="/contact" routerLinkActive="activated"><h6>Contact Us</h6></a>
+
+  </div>
+  <div class="navbar-right">
+    <button (click)="logout()" class="btn btn-danger" ><a href="/home" >Logout</a></button>
+  </div>
+</div>
+
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <p>&copy;2024 Mobi-Comm Services Ltd.</p>
+</div>
+
+

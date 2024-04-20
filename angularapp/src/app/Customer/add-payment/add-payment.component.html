@@ -1,0 +1,79 @@
+
+<div id="checkOut">
+  <h1>Checkout</h1>
+  <h4>Payment Details</h4>
+  <form>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Plan Id:</span>
+              <span>{{plan?.planId}}</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Addon Id:</span>
+              <span>{{addon?.addonId}}</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Amount to Pay:</span>
+              <span>{{recharge.rechargePrice}}</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Date:</span>
+              <span>{{recharge.date}}</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Mode of Payment:</span>
+              <select id="modeOfPayment" name="modeOfPayment" [(ngModel)]="selectedModeOfPayment">
+                <option value="UPI" selected >UPI</option>
+                <option value="CARD">CARD</option>
+                <option value="CASH">CASH</option>
+              </select>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>GST Charges:</span>
+              <span>0</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Late Payment Charges (If any):</span>
+              <span>None</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <span>Total Amount:</span>
+              <span>{{recharge?.rechargePrice}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div class="text-center">
+      <button class="btn btn-primary" [disabled]="!selectedModeOfPayment" (click)="addPayment()">Pay Now</button>
+
+    </div>
+
+
+  </form>
+</div>
+

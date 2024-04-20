@@ -1,0 +1,23 @@
+<div class="app-container" *ngIf="userRole == 'USER'; else otherRole">
+  <app-header></app-header>
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<ng-template #otherRole>
+  <div *ngIf="userRole === ''">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="app-container" *ngIf="userRole == 'ADMIN'">
+    <app-admin-header></app-admin-header>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</ng-template>
+
+

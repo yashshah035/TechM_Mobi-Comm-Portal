@@ -1,0 +1,49 @@
+.container {
+  margin-top: 20px;
+  width: 40%;
+  background-color: rgba(99, 154, 203, 0.5);
+  padding: 30px;
+  border-radius: 30px;
+
+
+}
+
+input {
+  margin-bottom: 30px;
+  padding: 8px;
+
+}
+
+button {
+  width: 30%;
+  padding: 8px;
+  margin-right: 15px;
+  background-color:purple;
+}
+
+.main {
+  background-image: url(../login/img/images.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color:white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main h1{
+  text-align: center;
+  color: white;
+}

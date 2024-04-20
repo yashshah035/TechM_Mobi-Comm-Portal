@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Add New Addon</h1>
+  <form [formGroup]="addonForm" class="form">
+
+
+    <div class="sub-container">
+      <div class="form-group">
+
+
+        <input type="text" id="addonName" name="addonName" formControlName="addonName" placeholder="Enter Addon Name"
+          class="form-control">
+        <input type="text" id="addonValidity" name="addonValidity" formControlName="addonValidity" class="form-control"
+          placeholder="Enter Addon Validity">
+      </div>
+
+      <div>
+        <input type="text" id="addonDetails" name="addonDetails" formControlName="addonDetails"
+          placeholder="Enter Addon Details" class="form-control">
+        <input type="number" id="addonPrice" name="addonPrice" formControlName="addonPrice"
+          placeholder="Enter Addon Price" class="form-control">
+
+      </div>
+
+    </div>
+  </form>
+  <button (click)="addaddon(addonForm.value)" class="btn btn-primary"> Add Addon </button>
+</div>

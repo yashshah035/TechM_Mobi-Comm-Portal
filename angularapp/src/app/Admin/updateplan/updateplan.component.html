@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Update Plan</h1>
+  <form [formGroup]="planForm" class="form">
+
+    <div class="sub-container">
+      <div class="form-group">
+
+        <input type="text" id="planType" name="planType" formControlName="planType"  placeholder="Enter Plan Type"
+          class="form-control">
+        <input type="text" id="planName" name="planName" formControlName="planName"  placeholder="Enter Plan Name"
+          class="form-control">
+        <input type="text" id="planValidity" name="planValidity" formControlName="planValidity"  class="form-control"
+          placeholder="Enter Plan Validity">
+      </div>
+
+      <div>
+        <input type="text" id="planDetails" name="planDetails" formControlName="planDetails"
+          placeholder="Enter Plan Details" class="form-control">
+        <input type="number" id="planPrice" name="planPrice" formControlName="planPrice"  placeholder="Enter Plan Price"
+          class="form-control">
+        <button (click)="updatePlan()"  type="submit" class="btn btn-primary"> Update Plan </button>
+      </div>
+
+    </div>
+  </form>
+</div>

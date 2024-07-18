@@ -71,7 +71,7 @@ ng serve
 
 4. Access the application at `http://localhost:4200`
 
-Note: replace '4200' with the port as you will see in the terminal. 
+Note: replace '4200' with the port as you will see in your terminal. 
 
 
 

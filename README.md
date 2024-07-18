@@ -68,8 +68,11 @@ cd angularapp
 npm install
 ng serve
 ```
+3. Database:
 
-4. Access the application at `http://localhost:4200`
+Create `mpr_db` named databse first in MySQL. Paste coorect jdbc localhost path in application.properties
+
+4. Access the application at `http://localhost:4200`. 
 
 Note: replace '4200' with the port as you will see in your terminal. 
 

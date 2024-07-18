@@ -70,7 +70,7 @@ ng serve
 ```
 3. Database:
 
-Create `mpr_db` named databse first in MySQL. Paste coorect jdbc localhost path in application.properties
+   Create `mpr_db` named databse first in MySQL. Paste coorect jdbc localhost path in application.properties
 
 4. Access the application at `http://localhost:4200`. 
 

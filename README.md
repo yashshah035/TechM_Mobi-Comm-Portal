@@ -24,7 +24,7 @@ This project is a multi-tiered web-based solution for Mobile Prepaid Recharge, d
 - RESTful Services
 
 ### Frontend
-- Angular
+- Angular == 11.0.0
 - HTML5
 - CSS3
 - Bootstrap
@@ -42,7 +42,7 @@ This project is a multi-tiered web-based solution for Mobile Prepaid Recharge, d
 
 ### Prerequisites
 - JDK 8 or higher
-- Node.js and NPM
+- Node.js == 10.13.0 and NPM
 - Maven
 - SQL
 
